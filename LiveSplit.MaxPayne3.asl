@@ -10,6 +10,12 @@ state("MaxPayne3", "Steam")
 	string7 chapterName : 0x143899D;
 }
 
+state("MaxPayne3", "Steam0124")
+{
+	float chapterTime   : 0x13C51EC, 0x20C;
+	string7 chapterName : 0x1437A1D;
+}
+
 state("MaxPayne3", "Social Club")
 {
 	float chapterTime :   0x13C216C, 0x20C; 
@@ -23,9 +29,15 @@ init
  	{
   		case 303780864:
    			version = "Social Club";
+   			print("RGS");
    			break;
    		case 303797248:
    			version = "Steam";
+   			print("Steam0124");
+   			break;
+      case 303793152:
+   			version = "Steam0124"; 
+   			print("Steam0124");
    			break;
  	}
 	vars.totalTime = 0;
