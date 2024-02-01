@@ -12,7 +12,7 @@ state("MaxPayne3", "Steam")
 
 state("MaxPayne3", "Steam0124")
 {
-	float chapterTime   : 0x13C51EC, 0x20C;
+	float chapterTime   : 0x013C42E0, 0x20C;
 	string7 chapterName : 0x1437A1D;
 }
 
