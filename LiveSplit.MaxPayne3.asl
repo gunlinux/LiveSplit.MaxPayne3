@@ -1,7 +1,7 @@
 state("MaxPayne3")
 {
-	float chapterTime   : 0x13B0EE0, 0x20C;  // no correct yet
-	string7 chapterName : 0x142461D;
+	float chapterTime   : 0x13C52E0, 0x20C;
+	string7 chapterName : 0x1438A1D;
 }
 
 state("MaxPayne3", "Steam")
@@ -14,6 +14,12 @@ state("MaxPayne3", "Steam0124")
 {
 	float chapterTime   : 0x013C42E0, 0x20C;
 	string7 chapterName : 0x1437A1D;
+}
+
+state("MaxPayne3", "Steam250601")
+{
+	float chapterTime   : 0x13C52E0, 0x20C;
+	string7 chapterName : 0x1438A1D;
 }
 
 state("MaxPayne3", "Social Club")
@@ -35,9 +41,13 @@ init
    			version = "Steam";
    			print("Steam0124");
    			break;
-      case 303793152:
+      	case 303793152:
    			version = "Steam0124"; 
    			print("Steam0124");
+   			break;
+		case 303805440:
+   			version = "Steam250601"; 
+   			print("Steam250601");
    			break;
  	}
 	vars.totalTime = 0;
